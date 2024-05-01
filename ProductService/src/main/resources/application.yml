@@ -1,0 +1,13 @@
+server:
+  port: 8090
+spring:
+  application:
+    name: PRODUCTSERVICE
+  config:
+    import: "optional:configserver:http://localhost:8762/"
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+        
